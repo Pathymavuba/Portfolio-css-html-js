@@ -1,0 +1,614 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 10px;
+    text-decoration: none;
+    text-decoration-color: #000;
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+html{
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+   
+}
+:root{
+    --bleu:#00CBE9;
+    --blackFooter:#37362F;
+    --noir:#000;
+    --box-shadow:0 1.5rem 1rem rgba(0,0,0,.1); 
+    --box-shadow-top:0 0 2rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,0.1);
+    --border-input:.1rem solid rgba(0,0,0,0.1);
+    --outiline:0.1rem solid rgba(0,0,0,0.1);
+    --outiline-hover:.2rem solid var(--black);
+    --radius:1rem;
+    --color-border:rgba(0,0,0,0.1);
+
+}
+body{
+    /* background: #eeee; */
+    background: #ffff;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+#navbar{
+    position:fixed;
+    display:flex;
+    flex-direction:row;
+    width: 100vw;
+    height: 10vh;
+    z-index:1000;
+    background:white;
+    /* box-shadow: var(--box-shadow); */
+    border-bottom:var(--outiline);
+    padding: 1.5rem 0;
+}
+.scrollage{
+    z-index:1000; 
+    border-bottom:var(--outiline); 
+}
+#navbar .logo{
+    color: var(--bleu);
+    font-size: 2.5rem;
+    margin-left:3.5rem;
+    font-weight:700;
+}
+#navbar #menu{
+    margin-left:68rem;
+    display: flex;
+    gap:2rem;
+}
+#navbar #menu a{
+    margin-top:.5rem;
+    font-size: 1.7rem;
+    color: black;
+    line-height: 2rem;
+    text-decoration:none;
+}
+#navbar #menu a:hover{
+    color: var(--bleu);
+    text-decoration:underline;
+    text-decoration-color:var(--bleu) ;
+}
+#navbar #menu a button{
+    font-size:1.5rem;
+    background: var(--bleu);
+    border-radius: var(--radius);
+    width:10rem;
+    height:3rem;
+
+    /* margin-bottom:.2rem; */
+    color: white;
+    margin-top:-2rem ;
+}
+#section{
+    display:flex;
+    flex-direction:column;
+    gap:10rem;
+}
+#section #header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 7.5rem;
+    width: 100vw;
+}
+#section #header #little-introduction{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left:4rem;
+    width: 50vw;
+    margin-top: 13rem;
+}
+#section #header #little-introduction h1{
+    font-size: 4rem;
+    font-weight:900;
+    color: var(--blackFooter);
+}
+#section #header #little-introduction h5{
+    font-size: 3rem;
+    font-weight:500;
+    color: var(--blackFooter);
+}
+#section #header #little-introduction p{
+    line-height:2.1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform:none;
+}
+#section #header #little-introduction p span{
+    line-height:2.1rem;
+    font-size:1.5rem;
+    font-weight: 300;
+    text-transform:none;
+    color: var(--bleu);
+}
+#section #header #little-introduction a button{
+    background: var(--bleu);
+    border-radius: var(--radius);
+    font-size: 1.5rem;
+    width:20rem;
+    height: 5rem;
+    color: white;
+    margin-top: 3rem;
+}
+#section #header #gif{
+    margin-right:4rem;
+    width: 50vw;
+}
+#section #header #gif img{
+    width:50vw;
+    height: 67vh;
+}
+#section #aboutme{
+    display: flex;
+    flex-direction:column;
+    gap: 3rem;
+    width: 100vw;
+    margin-top:5rem;
+}
+#section #aboutme h1{
+    text-align: center;}
+#section #aboutme h1 span.first{
+    font-size:3rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--bleu);
+}
+#section #aboutme h1 span.second{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--bleu);
+}
+#section #aboutme #description{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-around; */
+    /* gap: 1.5rem; */
+    margin-top:3.5rem;
+
+}
+#section #aboutme #description img{
+    width:70rem;
+}
+#section #aboutme #description #presentation{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    margin-left: 15rem;
+    margin-top:10rem;
+
+}
+#section #aboutme #description #presentation h2{
+    font-size:2.5rem;
+    color: var(--blackFooter);
+}
+#section #aboutme #description #presentation p{
+    line-height:2rem;
+    font-size:1.5rem;
+    font-weight: 300;
+    text-transform:none;
+}
+#section #aboutme #description #presentation p span{
+    line-height:2rem;
+    font-size:1.5rem;
+    font-weight: 300;
+    color: var(--bleu);
+    text-transform:none;
+}
+#section #aboutme #description #presentation a button{
+    background: var(--bleu);
+    border-radius: var(--radius);
+    font-size: 1.5rem;
+    width:13rem;
+    height:4rem;
+    color: white;
+}
+#section #aboutme #description #presentation a button:hover{
+    background:white;
+    border-radius: var(--radius);
+    color:var(--bleu);
+    border:1px solid var(--bleu);
+    
+}
+#section #aboutme #description #presentation  #icon{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+#section #aboutme #description #presentation  #icon i.fa-brands {
+    font-size: 2rem;
+}
+#section #aboutme #description #presentation  #icon i.fa-brands:hover{
+    margin-top:1rem;
+}
+#section #mescompetences{
+    display: flex;
+    flex-direction:column;
+    gap: 3rem;
+    width: 100vw;
+    margin-top:5rem;
+}
+#section #mescompetences h1{
+    text-align: center;}
+ #section #mescompetences h1 span.first{
+        font-size:3rem;
+        font-weight: 600;
+        text-decoration: underline;
+        text-decoration-color: var(--bleu);
+    }
+    #section #mescompetences h1 span.second{
+        font-size: 3rem;
+        font-weight: 600;
+        color: var(--bleu);
+    }
+    #section #mescompetences #skills{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        margin-top:6rem;
+        justify-content: space-around;
+    }
+    #section #mescompetences #skills #frontend{
+        box-shadow:var(--box-shadow-top);
+        width:15%;
+        height:300px;
+        /* box-shadow: var(--box-shadow); */
+        margin-left: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap:1rem;     
+    }
+    #section #mescompetences #skills #frontend #icon-competence{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background: var(--bleu);
+        border-radius:200%;
+        width:90px;
+        height:90px;
+        position: relative;
+        top:-3.5rem;  
+    }
+    #section #mescompetences #skills #frontend #icon-competence i.fa-solid{
+        color: white;
+        font-size:3rem;
+    }
+    #section #mescompetences #skills #frontend h3{
+        font-size:2rem;
+        margin-bottom:1rem;
+        color: var(--blackFooter);
+    }
+    #section #mescompetences #skills #frontend #outil{
+        display: flex;
+        flex-direction:row;
+        gap:.5rem;
+    }
+    #section #mescompetences #skills #frontend #outil i.fa-solid{
+        font-size:1.5rem;
+        color: green;
+    }
+    #section #mescompetences #skills #frontend #outil h4{
+        font-size:1.5rem;
+        font-weight:300;
+    }
+    #section #messervices{
+     display: flex;
+    flex-direction:column;
+    gap: 3rem;
+    width: 100vw;
+    margin-top:5rem;
+    align-items:center;
+    }
+  #section #messervices h1{
+        text-align: center;}
+  #section #messervices h1 span.first{
+        font-size:3rem;
+        font-weight: 600;
+        text-decoration: underline;
+        text-decoration-color: var(--bleu);
+    }
+  #section #messervices h1 span.second{
+        font-size: 3rem;
+        font-weight: 600;
+        color: var(--bleu);
+    }
+    #section #messervices #services{
+        /* background:red; */
+        margin-top:4rem;
+        gap: 3rem;
+        /* padding:0 2rem; */
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+    #section #messervices #services #webdeveloppement{
+        display:flex;
+        flex-direction: column;
+        gap:.8rem;
+        margin-right: 17rem;
+    }
+
+    #section #messervices #services #webdeveloppement i.fa-solid{
+        text-align: center;
+        color: var(--bleu);
+        font-size:2.5rem;
+    }
+    #section #messervices #services #webdeveloppement h3{
+        text-align: center;
+        color:var(--blackFooter);
+        font-size:2.5rem;
+    }
+    #section #messervices #services #webdeveloppement p{
+        font-size:1.3rem;
+        text-transform: none;
+    }
+    #section #messervices #services #webdeveloppement a{
+        font-size:1.3rem;
+        color:var(--bleu);
+        text-decoration: none;
+    }
+    #section #messervices #services #application-mobile{
+        display:flex;
+        flex-direction: column;
+        gap:.8rem;
+        margin-left: 17rem;
+    }
+    #section #messervices #services  #application-mobile i.fa-solid{
+        text-align: center;
+        color: var(--bleu);
+        font-size:2.5rem;
+    }
+    #section #messervices #services #application-mobile h3{
+        text-align: center;
+        color:var(--blackFooter);
+        font-size:2.5rem;
+        
+    }
+    #section #messervices #services #application-mobile p{
+        font-size:1.3rem;
+        text-transform: none;
+    }
+    #section #messervices #services #application-mobile a{
+        font-size:1.3rem;
+        color:var(--bleu);
+        text-decoration: none;
+    }
+    #section #messervices #services #e-commerce{
+        display:flex;
+        flex-direction: column;
+        gap:.8rem;
+        margin-right: 17rem;
+    }
+    #section #messervices #services  #e-commerce i.fa-solid{
+        text-align: center;
+        color: var(--bleu);
+        font-size:2.5rem;
+    }
+    #section #messervices #services #e-commerce  h3{
+        text-align: center;
+        color:var(--blackFooter);
+        font-size:2.5rem;
+    }
+    #section #messervices #services #e-commerce p{
+        font-size:1.3rem;
+        text-transform: none;
+    }
+    #section #messervices #services #e-commerce a{
+        font-size:1.3rem;
+        color:var(--bleu);
+        text-decoration: none;
+    }
+    #section #messervices #services #u-design{
+        display:flex;
+        flex-direction: column;
+        gap:.8rem;
+        margin-left: 17rem;
+    }
+    #section #messervices #services  #u-design i.fa-solid{
+        text-align: center;
+        color: var(--bleu);
+        font-size:2.5rem;
+    }
+    #section #messervices #services #u-design  h3{
+        text-align: center;
+        color:var(--blackFooter);
+        font-size:2.5rem;
+    }
+    #section #messervices #services #u-design p{
+        font-size:1.3rem;
+        text-transform: none;
+    }
+    #section #messervices #services #u-design a{
+        font-size:1.3rem;
+        color:var(--bleu);
+        text-decoration: none;
+    }
+    #section #messervices a button{
+        background: white;
+        border:1px solid var(--bleu);
+        color: var(--bleu);
+        border-radius: var(--radius);
+        width:17rem;
+        height:4rem;
+        font-size:1.7rem;
+    }
+    #section #messervices a button:hover{
+        background: var(--bleu);
+        color: white;
+        margin-top: .5rem;
+    }
+
+    #section #mesrealisations{
+        display: flex;
+       flex-direction:column;
+       gap: 5rem;
+       width: 100vw;
+       margin-top:5rem;
+       align-items:center;
+       }
+     #section #mesrealisations h1{
+           text-align: center;}
+     #section #mesrealisations h1 span.first{
+           font-size:3rem;
+           font-weight: 600;
+           text-decoration: underline;
+           text-decoration-color: var(--bleu);
+       }
+     #section #mesrealisations h1 span.second{
+           font-size: 3rem;
+           font-weight: 600;
+           color: var(--bleu);
+       }
+       /* #section #slider{
+           width:100vw;
+       } */
+     .carousel-item{
+         width:20vw;
+     }
+     #section #mesrealisations a button{
+        background: white;
+        border:1px solid var(--bleu);
+        color: var(--bleu);
+        border-radius: var(--radius);
+        width:17rem;
+        height:4rem;
+        font-size:1.7rem;
+     }
+   
+     #section #mesrealisations a button:hover{
+        background: var(--bleu);
+        color: white;
+        margin-top: .5rem;
+    }
+    #section #mecontacter{
+        display: flex;
+       flex-direction:column;
+       gap: 3rem;
+       width: 100vw;
+       margin-top:5rem;
+       align-items:center;
+       }
+     #section #mecontacter h1{
+           text-align: center;}
+     #section #mecontacter h1 span.first{
+           font-size:3rem;
+           font-weight: 600;
+           text-decoration: underline;
+           text-decoration-color: var(--bleu);
+       }
+     #section #mecontacter h1 span.second{
+           font-size: 3rem;
+           font-weight: 600;
+           color: var(--bleu);
+       }
+       #section #mecontacter #contactez-moi{
+           display:flex;
+           flex-direction:row;
+           justify-content:space-around;
+          
+       }
+       #section #mecontacter #contactez-moi img{
+           position: relative;
+           left:4rem;
+
+       }
+       #section #mecontacter #contactez-moi #espace-message{
+           display:flex;
+           flex-direction:column;
+           width:50vw;
+           gap:1.5rem;
+           margin-top:4.8rem;
+           position: relative;
+           left:17rem;
+           
+    }
+    #section #mecontacter #contactez-moi #espace-message #message{
+        border:var(--border-input);
+        width:40rem;
+        
+    }
+    #section #mecontacter #contactez-moi #espace-message #message textarea{
+        width:100%;
+    }
+    #section #mecontacter #contactez-moi #espace-message #name{
+        border:var(--border-input);
+        width:40rem;
+        height:3.5rem;
+        padding-top:1rem;
+        padding-left:.5rem;
+    }
+    #section #mecontacter #contactez-moi #espace-message #name input{
+        width:100%;
+    }
+    #section #mecontacter #contactez-moi #espace-message #mail{
+        border:var(--border-input);
+        width:40rem;
+        height:3.5rem;
+        padding-top:1rem;
+        padding-left:.5rem;
+    }
+    #section #mecontacter #contactez-moi #espace-message #mail input{
+        width:100%;
+    }
+    button[type="submit"]{
+        width:40rem;
+        height:4rem;
+        background:var(--bleu);
+        border:1px solid var(--bleu);
+        color:white;
+        /* border-radius:var(--radius); */
+        font-size:1.7rem;
+    }
+    button[type="submit"]:hover{
+        background:white;
+        border:1px solid var(--bleu);
+        color:var(--bleu);
+    }
+
+    #section #footer{
+     display:flex;
+       flex-direction:row;
+       gap:.8rem;
+       width:100%;
+       box-sizing:border-box;
+       height:10rem;
+       align-items:center;
+       justify-content:center;
+       margin-top:-8rem;
+       background:var(--blackFooter);
+       border:1px solid var(--blackFooter);
+       }
+       #section #footer #copyright{
+           border:1px solid white;
+           width:2rem;
+           height:2rem;
+           border-radius:100%;
+           text-align: center;
+           color:white;
+           font-size:1.3rem;
+       }
+       #section #footer h3{
+           color: white;
+           font-size:1.5rem;
+           margin-top:.9rem;
+       }
+    
+    
+
